@@ -5,12 +5,14 @@
 
 ### Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/Balqees-401-advanced-javascript/caps/pull/2)
 
 
 #### How to initialize/run your application 
       
-      -  node caps.js
+      -  node caps.js (for caps)
+      -  node driver.js (for driver)
+      -  node vendor.js (for vendor)
 
 #### Test 
      
