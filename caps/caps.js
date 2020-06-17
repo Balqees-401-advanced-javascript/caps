@@ -28,6 +28,7 @@ caps.on('connection', (socket) =>{
 
   socket.on('delivered',data => {
     console.log('delivered',data);
-    caps.to(data.storeName).emit('done' ,data);
+    caps.to('moda').emit('done' ,data);
   });
 });
+
