@@ -4,7 +4,9 @@
   "description": "",
   "main": "caps.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --coverage",
+    "start": "node caps.js",
+    "lint": "eslint '**/*.js'"
   },
   "keywords": [],
   "author": "",

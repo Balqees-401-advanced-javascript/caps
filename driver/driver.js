@@ -3,9 +3,8 @@
 const io = require('socket.io-client');
 const caps = io.connect('http://localhost:3000/caps');
 
-caps.emit('join', 'driver');
 
-caps.on('msg', data => { 
+caps.on('pickup', data => { 
   setTimeout(() => {
     console.log(`picked up ${data.payload.orderID}`);
     let event = { event: 'in-transit', time: new Date(), payload: data.payload };

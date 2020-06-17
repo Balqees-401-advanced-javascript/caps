@@ -23,11 +23,11 @@ caps.on('connection', (socket) =>{
 
   socket.on('in-transit',data => {
     console.log('in-transit',data);
-    caps.to(data).emit('in-transit' ,data);
+    caps.to(data.storeName).emit('in-transit' ,data);
   });
 
   socket.on('delivered',data => {
     console.log('delivered',data);
-    caps.to(data).emit('delivered' ,data);
+    caps.to(data.storeName).emit('done' ,data);
   });
 });
